@@ -5,9 +5,23 @@ Funcionalidade: Adicionar itens ao carrinho
 
         Contexto: 
         Dado que o usuário esteja no catálogo do site
+        Quando acionar o botão de adicionar ao carrinho
+        E selecionar finalizar compra com um novo cadastro
+            
+            Cenário: Novo cadastro
+                Entao deverá ser apresentado os campos pessoais para preenchimento
+                
+            Cenário: Informações inválidas
+                Quando preencher um campo com informações inválidas
+                Entao o campo deverá sinalizar com um aviso de campo inválido
 
-            Cenário: Adicionando itens
-                Quando acionar o botão de adicionar ao carrinho
-                Então deverá ser aberta uma mensagem de prosseguir comprando ou finalizar compra
-                
-                
+            Cenário: Finalizando compra
+                Quando finalizar o cadastro, a tela de informações de entrega será apresentada
+                Entao o meio de pagamento deverá ser apresentado, escolha a opção desejada
+                E ao finalizar o pagamento, o número do pedido deverá ser gerado
+        
+
+
+
+
+
