@@ -4,7 +4,7 @@ Funcionalidade: Adicionar itens ao carrinho
     De forma que eu consiga me cadastrar no site e finalizar a compra posteriormente
 
         Contexto: 
-        Dado que o usuário esteja na tela de compras do site
+        Dado que o usuário esteja no catálogo do site
 
             Cenário: Adicionando itens
                 Quando acionar o botão de adicionar ao carrinho
